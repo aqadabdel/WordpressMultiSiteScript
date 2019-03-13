@@ -11,7 +11,7 @@ to generate users and multisites by lot.
 
 Before use you need to install php, wordpress with multisite activated in conf file and wp cli.
 
-To install wp cli
+To install wp cli</br>
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 
 This script use commands: </br>
