@@ -5,8 +5,6 @@ $row = 0;
 $output = "#!/bin/bash\n";
 
 while(( $data = fgetcsv($fd, 1000, ";") ) !== FALSE) {
-		$num = count($data);
-		#echo "<p> $num fields in line $row</br></p>\n";
 		if($row == 0)
 		{
 			$header_url = $data[0];
@@ -21,16 +19,16 @@ while(( $data = fgetcsv($fd, 1000, ";") ) !== FALSE) {
 			 $header_mail | $header_admin_login | $header_admin_pw \n";
 	 		$row++;
 			continue;	
-		}	
+		}
+		# DEBUG
 		#echo "$header_url $header_sitename $header_student_login $header_student_pw $header_admin_login $header_admin_pw";		
-		$row++;
 		#print_r($data);
-
+		
 
 		$url = $data[0];
-        $suburl = $data[1];
-        $student_login = str_replace('_','',$data[2]);
-        $student_pw = $data[3];
+        	$suburl = $data[1];
+       		$student_login = str_replace('_','',$data[2]);
+        	$student_pw = $data[3];
                 
 		$mail = $student_login . chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90)) . chr(rand(65,90)) . '@etu.gea';
 		$admin_login = $data[5];
@@ -43,8 +41,9 @@ while(( $data = fgetcsv($fd, 1000, ";") ) !== FALSE) {
 		$output .= "wp user update $student_login $mail --role=author --url=$url --allow-root\n"; 
 		$output .= "wp user create $admin_login $admin_mail --role=administrator --url=$url --user_pass=$admin_pw --allow-root\n";
 		$output .= "wp user update $admin_login $admin_mail --role=administrator --url=$url --user_pass=$admin_pw --allow-root\n";
-
-	}
+		
+		$row++;
+	}//END OF WHILE MAIN LOOP
 	fclose($fd);
 	$fd =fopen('genusers.sh','w+');
 	fwrite($fd, $output);
