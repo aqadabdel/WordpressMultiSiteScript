@@ -21,14 +21,13 @@ error_reporting(E_ALL);
 	<div class="container">
 <?php
 
-$fd = fopen("file.csv",'r');
+$fd = fopen("input.csv",'r');
 $row = 0;
 	while(( $data = fgetcsv($fd, 1000, ";") ) !== FALSE) {
 		$num = count($data);
 		#echo "<p> $num fields in line $row</br></p>\n";
 		if($row == 0)
 		{
-			echo "ENTETE DU TABLEAU\n";
 			$header_url = $data[0];
 			$header_sitename = $data[1];
 			$header_student_login = $data[2];

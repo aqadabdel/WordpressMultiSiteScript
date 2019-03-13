@@ -1,6 +1,6 @@
 <?php
 
-$fd = fopen("file.csv",'r');
+$fd = fopen("input.csv",'r');
 $row = 0;
 $output = "#!/bin/bash\n";
 
