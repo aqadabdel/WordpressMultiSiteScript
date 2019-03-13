@@ -26,5 +26,5 @@ The index.php is designed to show the list in a webpage before using the script 
 
 <h3> Author: AQAD ABDEL </h3>
 <h3> IUTA VILLENEUVE D'ASCQ </h3>
-<h3> Université des Sciences de Lille </h3>
+<h3> Université de Lille </h3>
 <h3><i>abdelaziz.aqad(at)univ-lille.fr</i></h3>
