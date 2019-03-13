@@ -14,10 +14,10 @@ Before use you need to install php, wordpress with multisite activated in conf f
 To install wp cli
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 
-This script use <br>
-<b>wp site create</b>
-<b>wp user create</b>
-<b>wp user update</b>
+This script use: </br>
+<b>wp site create</b></br>
+<b>wp user create</b></br>
+<b>wp user update</b></br>
 
 if a user already exist, it will update it instead. 
 
