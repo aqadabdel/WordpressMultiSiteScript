@@ -24,7 +24,7 @@ if a user already exist, it will update it instead.
 The index.php is designed to show the list in a webpage before using the script to generate users.
 
 
-<h1> Author: AQAD ABDEL </h1>
-<h2> IUTA VILLENEUVE D'ASCQ </h2>
-<h2> Université des Sciences de Lille </h2>
-abdelaziz.aqad(at)univ-lille.fr
+<h3> Author: AQAD ABDEL </h3>
+<h3> IUTA VILLENEUVE D'ASCQ </h3>
+<h3> Université des Sciences de Lille </h3>
+<h3><i>abdelaziz.aqad(at)univ-lille.fr</i></h3>
