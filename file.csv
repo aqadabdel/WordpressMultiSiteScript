@@ -1,0 +1,6 @@
+complete url;sub url;user_login;user password;email;admin account;admin password
+http://hostnameurl/subdomain1;subdomain1;loginuser1;password1;loginuser1@mail.tst;admin1;adminpassword
+http://hostnameurl/subdomain2;subdomain2;loginuser2;password2;loginuser2@mail.tst;admin1;adminpassword
+http://hostnameurl/subdomain3;subdomain3;loginuser3;password3;loginuser3@mail.tst;admin2;adminpassword
+http://hostnameurl/subdomain4;subdomain4;loginuser4;password4;loginuser4@mail.tst;admin2;adminpassword
+http://hostnameurl/subdomain5;subdomain5;loginuser5;password5;loginuser5@mail.tst;admin3;adminpassword
