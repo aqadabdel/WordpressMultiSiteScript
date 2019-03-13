@@ -20,4 +20,6 @@ wp user create
 wp user update
 
 if a user already exist, it will update it instead. 
+
+The index.php is designed to show the list in a webpage before using the script to generate users.
  
