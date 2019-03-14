@@ -1,5 +1,8 @@
 # Wordpress MultiSite Scripts
-Wordpress Scripts pour créer des multisites à partir d'un fichier CSV ect...
+Wordpress Scripts pour créer des multisites à partir du fichier CSV input.csv
+Ce script crée les slugs et utilisateurs avec le rôle d'auteur our d'administrateur.
+
+
 This is a simple script to create multiple users and sub websites in Worpress 
 from a student list in CSV.
 
@@ -22,6 +25,12 @@ This script use commands: </br>
 if a user already exist, it will update it instead. 
 
 The index.php is designed to show the list in a webpage before using the script to generate users.
+
+TODO:
+Mettre des tests de vérification de variables en input (mail is mail? ect...)
+Faire un formulaire d'upload pour l'envoi.
+
+
 
 
 <h3> Author: AQAD ABDEL </h3>
