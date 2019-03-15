@@ -29,6 +29,7 @@ The index.php is designed to show the list in a webpage before using the script 
 TODO:
 Mettre des tests de vérification de variables en input (mail is mail? ect...)
 Faire un formulaire d'upload pour l'envoi.
+Choix des Roles pour l'utilisateur à ajouter dans le csv.
 
 
 
